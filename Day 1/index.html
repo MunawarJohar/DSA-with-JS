@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSA with JS Day 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        pre {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>DSA with JS - Day 1</h1>
+
+    <!-- Introduction -->
+    <div class="section">
+        <h2>Introduction</h2>
+        <p>This document introduces you to the foundational concepts of JavaScript, focusing on basic operations, data types, and common JavaScript functions. These concepts are essential for learning Data Structures and Algorithms (DSA) in JavaScript.</p>
+    </div>
+
+    <!-- Basics of JavaScript -->
+    <div class="section">
+        <h2>1. Basics of JavaScript</h2>
+        <h3>Variables and Data Types</h3>
+        <p>In JavaScript, variables store data values. Here's a look at the basic types of data:</p>
+        <ul>
+            <li><strong>Number</strong>: Numeric values. Example: <code>let age = 30;</code></li>
+            <li><strong>String</strong>: Sequence of characters. Example: <code>let name = "John";</code></li>
+            <li><strong>Boolean</strong>: <code>true</code> or <code>false</code> values. Example: <code>let isStudent = true;</code></li>
+            <li><strong>Object</strong>: Collection of key-value pairs. Example: <code>let person = { name: "John", age: 30 };</code></li>
+            <li><strong>Array</strong>: Ordered collection of values. Example: <code>let fruits = ["apple", "banana", "cherry"];</code></li>
+        </ul>
+    </div>
+
+    <!-- Operators in JavaScript -->
+    <div class="section">
+        <h2>2. Operators in JavaScript</h2>
+
+        <h3>Arithmetic Operators</h3>
+        <pre>
+let a = 10;
+let b = 20;
+console.log(a + b);  // 30
+console.log(a * b);  // 200
+console.log(b % a);  // 0 (remainder)
+        </pre>
+
+        <h3>Relational Operators</h3>
+        <pre>
+let x = 10;
+let y = 20;
+console.log(x > y);    // false
+console.log(x < y);    // true
+console.log(x == 10);  // true
+        </pre>
+
+        <h3>Logical Operators</h3>
+        <pre>
+let isAdult = true;
+let hasPermission = false;
+console.log(isAdult && hasPermission);  // false
+console.log(isAdult || hasPermission);  // true
+        </pre>
+
+        <h3>Unary Operators</h3>
+        <pre>
+let a = 5;
+console.log(++a); // 6 (Pre-increment)
+console.log(a--); // 6 (Post-decrement)
+        </pre>
+    </div>
+
+    <!-- Type Coercion in JavaScript -->
+    <div class="section">
+        <h2>3. Type Coercion in JavaScript</h2>
+        <p>Type coercion is JavaScript's ability to automatically convert values from one data type to another. For example:</p>
+        <pre>
+let num = 5;
+let str = "Hello";
+console.log(num + str);  // "5Hello"
+console.log("5" - 1);  // 4 (string "5" converted to number)
+        </pre>
+
+        <h3>Type Casting</h3>
+        <pre>
+let num = "10";
+let convertedNum = Number(num);
+console.log(convertedNum);  // 10 (number)
+        </pre>
+    </div>
+
+    <!-- Practice Problems -->
+    <div class="section">
+        <h2>4. Practice Problems</h2>
+
+        <h3>Q1: Sum of Two Integers</h3>
+        <pre>
+let a = 10;
+let b = 20;
+console.log(a + b);  // Output: 30
+        </pre>
+
+        <h3>Q2: Accept and Print the Answer</h3>
+        <pre>
+// let age = Number(prompt("Enter your age"));
+// console.log(age);
+        </pre>
+
+        <h3>Q3: Swap Two Variables Using 3 Methods</h3>
+        
+        <h4>Method 1: Using a Temporary Variable</h4>
+        <pre>
+let num1 = 10;
+let num2 = 20;
+let temp = num1;
+num1 = num2;
+num2 = temp;
+console.log(num1);  // 20
+console.log(num2);  // 10
+        </pre>
+
+        <h4>Method 2: Using Arithmetic Operations</h4>
+        <pre>
+let a = 10;
+let b = 20;
+a = a + b; // 30
+b = a - b; // 10
+a = a - b; // 20
+console.log(a);  // 20
+console.log(b);  // 10
+        </pre>
+
+        <h4>Method 3: Using Destructuring Assignment</h4>
+        <pre>
+let x = 10;
+let y = 20;
+[x, y] = [y, x];
+console.log(x);  // 20
+console.log(y);  // 10
+        </pre>
+    </div>
+
+    <!-- Math Functions -->
+    <div class="section">
+        <h2>5. Math Functions in JavaScript</h2>
+        <pre>
+console.log(Math.round(4.7));    // 5
+console.log(Math.ceil(4.3));     // 5
+console.log(Math.floor(4.9));    // 4
+console.log(Math.trunc(4.5));    // 4
+console.log(Math.pow(2, 3));     // 8
+console.log(Math.sqrt(25));      // 5
+console.log(Math.abs(-10));      // 10
+console.log(Math.max(1, 2, 3));  // 3
+console.log(Math.min(1, 2, 3));  // 1
+console.log(Math.random());      // Random number between 0 and 1
+console.log(3.14159.toFixed(2)); // 3.14
+        </pre>
+    </div>
+
+    <!-- Additional Practice -->
+    <div class="section">
+        <h2>6. Additional Practice</h2>
+
+        <h3>Q1: Calculate the Area and Perimeter of a Rectangle</h3>
+        <pre>
+let width = 10;
+let height = 20;
+let area = width * height;  // Area of rectangle
+let perimeter = 2 * (width + height);  // Perimeter of rectangle
+console.log("Area: " + area);         // Output: 200
+console.log("Perimeter: " + perimeter);  // Output: 60
+        </pre>
+
+        <h3>Q2: Generate a 4-Digit OTP</h3>
+        <pre>
+let otp = Math.trunc(Math.random() * 10000) + 1000;
+console.log("OTP:", otp);  // Random 4-digit OTP
+        </pre>
+
+        <h3>Q3: Calculate Area of a Triangle Using Heron's Formula</h3>
+        <pre>
+let sideA = 10;
+let sideB = 20;
+let sideC = 10;
+let s = (sideA + sideB + sideC) / 2;  // Semi-perimeter
+let area = Math.sqrt(s * (s - sideA) * (s - sideB) * (s - sideC));
+console.log("Area of Triangle: ", area);
+        </pre>
+
+        <h3>Q4: Circumference of a Circle</h3>
+        <pre>
+let radius = 30;
+let circumference = 2 * Math.PI * radius;
+console.log("Circumference: ", circumference);  // Output: 188.49555921538757
+        </pre>
+    </div>
+
+    <!-- Conclusion -->
+    <div class="section">
+        <h2>7. Conclusion</h2>
+        <p>These foundational concepts and JavaScript functions form the building blocks for tackling more complex topics in Data Structures and Algorithms (DSA). Mastering these topics will ensure you're well-equipped to dive deeper into DSA with JavaScript!</p>
+    </div>
+<script src="Questions.js"></script>
+<script src="PracticeQuestion.js"></script>
+</body>
+</html>

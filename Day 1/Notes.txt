@@ -1,0 +1,18 @@
+DSA with JS
+Basics logic on JS variable operator an operator
+Q1. sum of two interger
+
+Relation between integer and string
+
+type coercion
+
+Q2. Accept and print the answer
+
+Type casting
+Q3 swap two variables via 3 methods
+
+Operators and their operations
+Arthmetic -, ,+ * ,%, /
+Relational operator > , < 
+logical operato && ||
+unary operator ++ --
