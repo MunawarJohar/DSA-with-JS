@@ -226,7 +226,7 @@ console.log(3.14159.toFixed(2)); // 3.14
 ## 6. Additional Practice 🏋️‍♂️
 
 ### Q1: Calculate the Area and Perimeter of a Rectangle
-```javascript
+```
 let width = 10;
 let height = 20;
 let area = width * height;  // Area of rectangle
@@ -237,43 +237,26 @@ console.log("Perimeter: " + perimeter);  // Output: 60
 ```
 
 ### Q2: Generate a 4-Digit OTP
-```javascript
-let otp = Math.trunc(Math.random() * 10000) + 1000;
-console.log("OTP:", otp);  //
-
-## 6. Additional Practice 🏋️‍♂️
-
-### Q1: Calculate the Area and Perimeter of a Rectangle
-```javascript
-let width = 10;
-let height = 20;
-let area = width * height;  // Area of rectangle
-let perimeter = 2 * (width + height);  // Perimeter of rectangle
-
-console.log("Area: " + area);         // Output: 200
-console.log("Perimeter: " + perimeter);  // Output: 60
-Q2: Generate a 4-Digit OTP
+```
 javascript
-Copy
 let otp = Math.trunc(Math.random() * 10000) + 1000;
 console.log("OTP:", otp);  // Random 4-digit OTP
-Q3: Calculate Area of a Triangle Using Heron's Formula
-javascript
-Copy
+```
+### Q3: Calculate Area of a Triangle Using Heron's Formula
+```
 let sideA = 10;
 let sideB = 20;
 let sideC = 10;
 let s = (sideA + sideB + sideC) / 2;  // Semi-perimeter
 let area = Math.sqrt(s * (s - sideA) * (s - sideB) * (s - sideC));
 console.log("Area of Triangle: ", area);
-Q4: Circumference of a Circle
-javascript
-Copy
+```
+### Q4: Circumference of a Circle
+```
 let radius = 30;
 let circumference = 2 * Math.PI * radius;
 console.log("Circumference: ", circumference);  // Output: 188.49555921538757
-7. Conclusion
+```
+## 7. Conclusion
 These foundational concepts and JavaScript functions form the building blocks for tackling more complex topics in Data Structures and Algorithms (DSA). Mastering these topics will ensure you're well-equipped to dive deeper into DSA with JavaScript!
 
-python
-Copy
