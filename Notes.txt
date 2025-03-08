@@ -1,0 +1,16 @@
+DSA with JS
+Conditional Statement
+
+Valid voter
+
+Shop discount 
+
+Electric Bill
+
+Pkr domination
+
+Ternary Operator ?:
+Nested ternary opertor
+
+Switch and One Case handling multiple values
+ switch case can't handle float value because its precision issues.
