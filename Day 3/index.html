@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSA with JS - Day 3</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        pre {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>DSA with JS - Day 3</h1>
+
+    <!-- Introduction -->
+    <div class="section">
+        <h2>Introduction</h2>
+        <p>This document contains essential notes and code examples for learning Data Structures and Algorithms (DSA) using JavaScript. The topics covered include loops (for, while, do-while), break and continue statements, and practice problems like sum of digits, reverse of a number, strong numbers, and more.</p>
+    </div>
+
+    <!-- For Loop -->
+    <div class="section">
+        <h2>For Loop</h2>
+        <p>The <code>for</code> loop is used to iterate over a block of code a specific number of times.</p>
+
+        <h3>Q1: Print "Hello World" N Times</h3>
+        <pre>
+for (let i = 0; i < 5; i++) {
+    console.log("Hello World");
+}
+        </pre>
+
+        <h3>Q2: Sum of N Natural Numbers and Factorial of a Number</h3>
+        <pre>
+var number = Number(prompt("Enter your number: "));
+var sum = 0;
+for (let i = 1; i <= number; i++) {
+    sum = sum + i;
+}
+var fact = 1;
+for (var i = 1; i <= number; i++) {
+    fact = fact * i;
+}
+console.log("The sum of n natural numbers is: ", sum);
+console.log("The factorial is: ", fact);
+        </pre>
+
+        <h3>Q3: Factors of a Number</h3>
+        <pre>
+for (var i = 1; i <= number; i++) {
+    if (number % i === 0) {
+        console.log(i);
+    }
+}
+        </pre>
+
+        <h3>Q4: Prime Number</h3>
+        <pre>
+var primeIs = true;
+for (var i = 2; i <= Math.floor(number / 2); i++) {
+    if (number % i === 0) {
+        primeIs = false;
+        break;
+    }
+}
+console.log(primeIs);
+        </pre>
+
+        <h3>Break and Continue</h3>
+        <pre>
+for (let i = 10; i > 0; i--) {
+    if (i === 8) {
+        continue;
+    } else {
+        console.log(i);
+    }
+}
+        </pre>
+    </div>
+
+    <!-- While Loop -->
+    <div class="section">
+        <h2>While Loop</h2>
+        <p>The <code>while</code> loop is used to execute a block of code as long as a condition is true.</p>
+
+        <h3>Q5: Sum of Digits (123)</h3>
+        <pre>
+var digit = 123;
+let num = 0;
+while (digit !== 0) {
+    var newNum = digit % 10;
+    num += newNum;
+    digit = Math.floor(digit / 10);
+}
+console.log("The sum of digits", num);
+        </pre>
+
+        <h3>Q6: Reverse of a Number</h3>
+        <pre>
+var reverseNumber = 123;
+let reNum = 0;
+while (reverseNumber !== 0) {
+    var newNumber = reverseNumber % 10;
+    reNum = reNum * 10 + newNumber;
+    reverseNumber = Math.floor(reverseNumber / 10);
+}
+console.log("The reverse of the number is: ", reNum);
+        </pre>
+
+        <h3>Q7: Strong Number</h3>
+        <pre>
+let strongNum = 145;
+let originalNum = strongNum;
+let sumfact = 0;
+while (strongNum !== 0) {
+    var newStrong = strongNum % 10;
+    var factorial = 1;
+    for (let i = 1; i <= newStrong; i++) {
+        factorial *= i;
+    }
+    sumfact += factorial;
+    strongNum = Math.floor(strongNum / 10);
+}
+if (sumfact === originalNum) {
+    console.log("It is a strong number");
+} else {
+    console.log("It is not a strong number");
+}
+        </pre>
+    </div>
+
+    <!-- Do-While Loop -->
+    <div class="section">
+        <h2>Do-While Loop</h2>
+        <p>The <code>do-while</code> loop is used to execute a block of code at least once, and then repeat the loop as long as a condition is true.</p>
+
+        <h3>Q8: Repeat "Hello" Until User Stops</h3>
+        <pre>
+var str_word;
+do {
+    str_word = prompt("If you want to stop, enter 0: ");
+    console.log("Hello...");
+} while (str_word !== "0");
+        </pre>
+    </div>
+
+    <!-- Guess the Number -->
+    <div class="section">
+        <h2>Guess the Number</h2>
+        <p>A simple game where the user guesses a randomly generated number.</p>
+
+        <h3>Q9: Guess the Number</h3>
+        <pre>
+let random = Math.floor(Math.random() * 10) + 1;
+var guessNum;
+while (guessNum !== random) {
+    guessNum = Number(prompt("Enter your guess number:"));
+    if (guessNum > random) {
+        console.log("Guess number is greater");
+    } else if (guessNum < random) {
+        console.log("Guess number is less");
+    } else {
+        console.log("Congrats! 🎉🎉🎉🎉🎊🎊🎉🎉");
+    }
+}
+        </pre>
+    </div>
+
+    <script src="Questions.js"></script>
+</body>
+</html>

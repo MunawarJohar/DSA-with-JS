@@ -1,0 +1,21 @@
+DSA with JS
+Loop
+
+- for Loop
+Q print n hello wolrd
+Q sum of n natural numbers and factorial of number
+Q factors of number
+Q prime number
+break and continue
+
+Q while Loop
+Q sum of digits 123
+Q reverse of number
+
+Q strong number
+
+Q Do while repeat hello
+
+Q guess the number
+
+Q sasta calculator
